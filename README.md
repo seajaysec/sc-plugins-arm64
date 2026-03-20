@@ -35,7 +35,17 @@ The norns community distributes ~68 SuperCollider UGen plugins as pre-compiled *
 | **PulsePTR** | 1 | Polynomial transition region pulse | [robbielyman/pulseptr](https://github.com/robbielyman/pulseptr) |
 | **TrianglePTR** | 1 | Polynomial transition region triangle | [robbielyman/triangleptr](https://github.com/robbielyman/triangleptr) |
 
-## Install pre-built binaries
+## Install via maiden (norns)
+
+In maiden's matron REPL:
+
+```
+;install https://github.com/seajaysec/sc-plugins-arm64
+```
+
+Then load **sc-plugins-arm64** from SELECT. It will detect your architecture, download the 64-bit binaries, and install them. Restart norns when prompted.
+
+## Install manually
 
 Download the latest release and extract to your SuperCollider extensions directory:
 
