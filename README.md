@@ -60,6 +60,14 @@ Restart SuperCollider to load the plugins.
 
 ## Build from source
 
+> **This `build.sh` is the single source of truth for the from-source build.** The
+> norns ports (ingenue, norns-panicos, schwung-norns, move-everything-norns) consume
+> the **prebuilt tarball** this produces — they should not carry their own copies of
+> the build script. The prebuilt `.so` are ABI-compatible with any target whose
+> `scsynth` reports a matching SuperCollider **plugin api_version** (in practice, the
+> same SC 3.x line). If a target ships a different SuperCollider version, regenerate
+> the tarball here against that version rather than shipping mismatched binaries.
+
 Run on any Debian-based aarch64 system with `supercollider-server` installed:
 
 ```bash
